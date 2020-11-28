@@ -31,12 +31,13 @@ function displayResults(responseJson) {
 };
 
 function getParksList(searchTerm, maxResults=10) {
+    searchTerm = searchTerm.replace(/\s/g, '');
     let url = `https://developer.nps.gov/api/v1/parks?stateCode=${searchTerm}&limit=${maxResults}&api_key=8oY4lm2uTI7QgnW6eRfGM9XmAVsNcX7dWJ3cTvrk`
 //   const queryString = formatQueryParams(params)
 //   const url = searchURL + '?' + queryString;
 
 //   console.log(url);
-console.log(maxResults)
+console.log(searchTerm)
 
   fetch(url)
     .then(response => {
