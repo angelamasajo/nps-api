@@ -13,7 +13,7 @@
   button:hover {
     cursor: pointer;
   }
-  
+
   .container {
     max-width: 600px;
     margin: 0 auto;
@@ -26,3 +26,21 @@
   .hidden {
     display: none;
   }
+
+  .user-submit {
+    color: black;
+    background-color: seagreen;
+    display: block;
+    text-align: center;
+    padding: 10px 50px;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+#results {
+    background-color: #BFFBDA;
+    padding: 15px;
+}

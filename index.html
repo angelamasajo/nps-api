@@ -13,13 +13,13 @@
         <h1>NPS Park Finder</h1>
 
         <form id="js-form">
-            <label for="js-search-term">Search for park/area</label>
+            <p><label for="js-search-term">Search for parks by states, separated by commas</label></p>
             <input type="text" name="search-term" id="js-search-term" required>
 
-            <label for="js-max-results">Maximum results to return</label>
+            <p><label for="js-max-results">Max results to return</label></p>
             <input type="number" name="max-results" id="js-max-results" value="10">
-
-            <input type="submit" value="SEARCH">
+            <br><br>
+            <input type="submit" class="user-submit" value="SEARCH">
         </form>
 
         <p id="js-error-message" class="error-message"></p>
